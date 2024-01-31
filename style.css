@@ -1,0 +1,186 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 620px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: black;
+    height: 100vh;
+}
+
+header {
+    font-size: 32px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+header h1, i {
+    margin-top: 80px;
+}
+
+header i {
+    cursor: pointer;
+}
+
+section .names {
+    margin-left: 16px;
+}
+
+section {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding: 0px 30px;
+}
+
+#buttom {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+thead td{
+    color:rgb(143, 142, 149);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+tbody td{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    /* font-weight: bold; */
+}
+
+table tr{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px rgb(50, 49, 54);
+    padding: 10px;
+}
+
+section img {
+    border-radius: 30px;
+    width: 80px;
+}
+
+#tel {
+    border: none;
+}
+
+body {
+    /* background-color: rgb(44, 44, 44); */
+    background-color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/* Partes do contatos */
+
+.add-contact {
+    background-color: rgb(28, 28, 30);
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+    transform: translateX(-50%); 
+    z-index: 99999;
+    width: 620px; 
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#add.inactive {
+    color: rgb(64, 64, 68);;
+    pointer-events: none;
+    cursor: none;
+}
+
+.add-contact.add {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+}
+
+.header p {
+    cursor: pointer;
+}
+
+.header {
+    margin-top: 60px;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section img{
+    width: 200px;
+    border-radius: 100px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: 30px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 0px 30px;
+}
+
+.forms{
+    background-color: rgb(44, 44, 46);
+    margin-top: 50px;
+    padding: 8px;
+    text-align: center;
+}
+
+.forms input {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(44, 44, 46);
+    border: none;
+    border-bottom: solid 1px rgb(50, 49, 54);
+}
+
+input:focus {
+    outline-style: none;
+}

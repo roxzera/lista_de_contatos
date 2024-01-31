@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contato</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/e3be2873a5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="add-contact" id="add-contact">
+            <div class="header">
+                <p id="cancel">Cancel</p>
+                <h2>Adicionar contatos</h2>
+                <p id="add">Ok</p>
+            </div>
+            <div class="section">
+                <img src="/imgs/imagem-sem-foto-de-perfil-do-facebook-1348864936180_956x5001.jpg" alt="">
+                <p>Adicionar foto</p>
+            </div>
+            <div class="forms">
+                <form action="">
+                    <input type="text" name="name" id="name" placeholder="Nome" required>
+                    <input type="text" name="last-name" id="last-name" placeholder="Sobrenome">
+                    <input type="number" name="cel" id="cel" placeholder="Telefone" required>
+                </form>
+            </div>
+        </div>
+        <header>
+            <h1>Contatos</h1>
+            <i class="fa-solid fa-plus" id="btn-contacts"></i>
+        </header>
+        <section>
+            <img src="/imgs/256x256bb.png" alt="">
+            <div class="names">
+                <h2 id="name-contact">Nome</h2>
+                <p>Seus contatos</p>
+            </div>
+        </section>
+        <section>
+            <table cellspacing = "0">
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Numero</td>
+                    </tr>
+                <tbody class="names-numbers">
+                </tbody>
+                </thead>
+            </table>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
