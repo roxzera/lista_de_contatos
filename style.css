@@ -77,7 +77,7 @@ section img {
     width: 80px;
 }
 
-#tel {
+#cel {
     border: none;
 }
 
@@ -183,4 +183,28 @@ input[type=number] {
 
 input:focus {
     outline-style: none;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 670px) {
+    header {
+        font-size: 20px;
+        padding: 0px 15px;
+    }
+    
+    .add-contact {
+        top: 40px;
+        width: 100%;
+    }
+
+    .header {
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+    .section img{
+        width: 150px;
+    }
+    
 }
